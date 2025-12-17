@@ -153,17 +153,38 @@ Aceptamos en la casilla-> "Trust this CA to indentity websites" -> Confiar en es
 FASE 3: Ejecución del ataque MITM (Kali)
 
 A. Iniciar el proxy-> sudo mitmproxy --mode transparent
+
+<img width="358" height="153" alt="Fase 3 kali mitm parte 1" src="https://github.com/user-attachments/assets/faa0d540-a626-4a25-a3bd-ae5935f0e7bc" />
+
+
 B. Iniciar el ARP Spoofing 
 
 Lanzar Bettercap-> sudo bettercap -iface eth0
-
 Definir objetivos-> set arp.targets 192.168.0.26,192.168.0.1
-
 Activar ARP Spoofing-> arp.spoof on
 
+<img width="1007" height="199" alt="Fase 3 kali arp spoofing" src="https://github.com/user-attachments/assets/72139338-f836-4b43-b7d0-b41ddef84de2" />
 
+Fase 4: Intercepción de credenciales.
 
+En la máquina de Linux, buscaremos una página web HTTPS, en este caso -> https://www.reddit.com/
 
+Dentro de https://www.reddit.com/ pondremos un correo eléctronico y la contraseña correspondiente para iniciar sesión. 
+
+<img width="597" height="681" alt="Fase 4 iniciar sesión en una página HTTPS" src="https://github.com/user-attachments/assets/0ce5636d-868d-44f1-8507-c58c2b6f4657" />
+
+Una vez iniciado sesión revisamos el terminal donde hayamos iniciado "mitmproxy", donde tendremos que buscar un "POST" en el que contenga la palabra "login", una vez encontrado, apretaremos dicho "POST" para analizar el flow de datos.
+
+<img width="1131" height="177" alt="Fase 4 MITM login" src="https://github.com/user-attachments/assets/3b3e5ed0-b01e-4446-93b4-13bab6745cfa" />
+
+Una vez dentro, encontraremos en el apartado "URL-encoded" el usuario [Correo eléctronico] y la contraseña para iniciar sesión. 
+
+Correo eléctronico-> ivanborja397@gmail.com
+Contraseña-> ivanborja400
+
+<img width="1147" height="861" alt="Resultado REDDIT pass and user" src="https://github.com/user-attachments/assets/bf1b246a-154d-4d32-bc48-11abbef0c37f" />
+
+Conclusión -> 
 
 
 
