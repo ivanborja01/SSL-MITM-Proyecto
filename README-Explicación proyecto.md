@@ -186,10 +186,7 @@ Contraseña-> ivanborja400
 
 Conclusión -> 
 
-
-
-
-
+En conclusión, el ataque SSL/TLS Man-in-the-Middle demuestra cómo la falta de autenticación en ARP y una gestión deficiente de certificados pueden comprometer comunicaciones supuestamente seguras. Al posicionarse como intermediario, el atacante puede interceptar, descifrar y manipular tráfico HTTPS. Esto evidencia la importancia de aplicar controles como HSTS, monitorización de red y una validación estricta de certificados. Sin estas medidas, la confidencialidad e integridad de la información quedan seriamente expuestas.
 
 
 
