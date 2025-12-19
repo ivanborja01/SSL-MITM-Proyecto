@@ -159,7 +159,7 @@ Aceptamos en la casilla-> "Trust this CA to indentity websites" -> Confiar en es
 
 <img width="358" height="153" alt="Fase 3 kali mitm parte 1" src="https://github.com/user-attachments/assets/faa0d540-a626-4a25-a3bd-ae5935f0e7bc" />
 
-**B. Iniciar el ARP Spoofing **
+**B. Iniciar el ARP Spoofing**
 
 Lanzar Bettercap-> sudo bettercap -iface eth0
 Definir objetivos-> set arp.targets 192.168.0.26,192.168.0.1
