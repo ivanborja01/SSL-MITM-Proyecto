@@ -186,7 +186,7 @@ Contraseña-> ivanborja400
 
 <img width="1147" height="861" alt="Resultado REDDIT pass and user" src="https://github.com/user-attachments/assets/bf1b246a-154d-4d32-bc48-11abbef0c37f" />
 
-**Conclusión **-> 
+**Conclusión**-> 
 
 En conclusión, el ataque SSL/TLS Man-in-the-Middle demuestra cómo la falta de autenticación en ARP y una gestión deficiente de certificados pueden comprometer comunicaciones supuestamente seguras. 
 
